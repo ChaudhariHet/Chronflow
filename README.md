@@ -153,15 +153,6 @@ Content-Type: application/json
 - All routes that touch user data are protected by JWT-verification middleware on the server — client-side checks are a UX convenience, not the actual security boundary
 - Server errors are logged internally and never leaked to the client in raw form
 
-## Screenshots
-
-_Add screenshots of the landing page, login/signup, and dashboard here once deployed._
-
-```
-/assets/screenshot-landing.png
-/assets/screenshot-dashboard.png
-/assets/screenshot-profile.png
-```
 
 ## Future Improvements
 
