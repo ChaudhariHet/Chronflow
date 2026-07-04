@@ -145,6 +145,16 @@ Content-Type: application/json
 }
 ```
 
+## 🔗 Project Links
+
+**🔗 GitHub Repository:**
+https://github.com/ChaudhariHet/Authentication-Based-Stopwatch-Timer-Web-Application
+
+**🌐 Live Demo:**
+https://authentication-based-stopwatch-timer-web.onrender.com/
+
+---
+
 ## Security Notes
 
 - Passwords are hashed with bcrypt (12 salt rounds) — never stored in plaintext
