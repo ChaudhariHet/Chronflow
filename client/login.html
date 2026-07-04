@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in — Chronflow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="toast-container"></div>
+
+  <div class="auth-shell">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="auth-back-logo"><span class="dot"></span> Chronflow</a>
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle theme">
+          <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </nav>
+    </div>
+
+    <main class="auth-main">
+      <div class="card auth-card">
+        <div class="auth-card-header">
+          <span class="eyebrow">Welcome back</span>
+          <h1>Log in to Chronflow</h1>
+          <p>Pick up right where your last session left off.</p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+            <div class="field-error" id="error-email"></div>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <input type="password" id="password" name="password" placeholder="Your password" autocomplete="current-password" />
+              <button type="button" class="toggle-visibility" id="toggle-password" aria-label="Show password">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+            <div class="field-error" id="error-password"></div>
+          </div>
+
+          <div class="auth-options-row">
+            <label class="checkbox-row">
+              <input type="checkbox" id="rememberMe" name="rememberMe" />
+              Remember me
+            </label>
+            <a href="forgot-password.html" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Log in</button>
+        </form>
+
+        <div class="auth-footer-link">Don't have an account? <a href="signup.html">Sign up</a></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
