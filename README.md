@@ -2,6 +2,51 @@
 
 A full-stack web application where users create an account, log in securely, and track focused work sessions on a protected stopwatch dashboard. Built with vanilla JavaScript on the frontend and a Node.js/Express/MongoDB backend, with JWT-based authentication throughout.
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+<img width="1652" height="877" alt="Screenshot 2026-07-25 135947" src="https://github.com/user-attachments/assets/927a3394-3ee4-489c-a773-cc315de55778" />
+
+
+---
+
+### 📝 Register Page
+<img width="1591" height="890" alt="Screenshot 2026-07-25 140031" src="https://github.com/user-attachments/assets/57f96391-a483-43db-a5d4-52cc1c439e88" />
+
+
+---
+
+### 🏠 Dashboard
+<img width="1663" height="770" alt="Screenshot 2026-07-25 135712" src="https://github.com/user-attachments/assets/4dd9bc17-a96f-44e3-a1e3-e04ad7ae6a54" />
+
+
+---
+
+### 📊 Dashboard (Statistics & Overview)
+<img width="1622" height="395" alt="Screenshot 2026-07-25 135828" src="https://github.com/user-attachments/assets/d3376e59-8427-47dc-a1e2-0f506e4ea700" />
+
+
+---
+
+### ⏱️ Stopwatch Running
+<img width="1618" height="896" alt="Screenshot 2026-07-25 140259" src="https://github.com/user-attachments/assets/51b266bb-8357-4dcd-ba51-d98272ab7999" />
+
+
+
+---
+
+### 👤 User Profile
+<img width="1572" height="862" alt="Screenshot 2026-07-25 140335" src="https://github.com/user-attachments/assets/3c58e89a-7837-4cb9-95c0-1d9043c76d60" />
+
+
+---
+
+### 🌗 Theme Toggle (Light Mode)
+<img width="1606" height="887" alt="Screenshot 2026-07-25 140458" src="https://github.com/user-attachments/assets/279b0aab-e001-47c6-a0a6-8cd173961529" />
+
+
+---
+
 ## Features
 
 - **Secure authentication** — registration, login, and logout backed by JWT (stored in an httpOnly cookie) and bcrypt password hashing
