@@ -22,9 +22,13 @@ app.use(
   })
 );
 
-// --- Serve the static client ---
+// --- Serve the static client & vendor assets ---
 const clientPath = path.join(__dirname, '..', 'client');
 app.use(express.static(clientPath));
+
+// Also expose falling-leaves npm package dist statically for ES module or direct script imports
+const vendorPath = path.join(__dirname, '..', 'node_modules', 'falling-leaves', 'dist');
+app.use('/vendor/falling-leaves', express.static(vendorPath));
 
 // --- API routes ---
 app.use('/api/auth', authRoutes);

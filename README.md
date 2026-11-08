@@ -60,6 +60,7 @@ A full-stack web application where users create an account, log in securely, and
 - **Password visibility toggle** — on every password field
 - **Forgot password flow** — token-based reset (two-step UI)
 - **Fully responsive** — down to small mobile viewports
+- **🍂 Falling Leaves particle effect & customizer** — full-screen seasonal animation powered by `falling-leaves` with live customization for leaf shapes (maple, oak, ginkgo, birch, oval), custom image uploads (logo, pet, stickers), color presets, wind, speed, and leaf density with localStorage persistence
 
 ## Tech Stack
 
@@ -188,6 +189,24 @@ Content-Type: application/json
   "password": "SecurePass123",
   "rememberMe": true
 }
+```
+
+## 🍂 Falling Leaves Interactive Effect
+
+Powered by [`falling-leaves`](https://www.npmjs.com/package/falling-leaves), Chronflow includes an interactive seasonal leaf particle effect across every page with a dedicated control panel:
+
+- **🍁 Built-in Leaf Shapes**: Choose between Maple, Oak, Ginkgo, Birch, or Oval foliage
+- **🖼️ Custom Image Upload**: Upload any custom image (logo, pet, stickers, avatar) to drift across the screen
+- **🎨 Color Themes**: Choose from Autumn Glow, Golden Ginkgo, Forest Emerald, Cherry Blossom, or pick a custom hex color
+- **🌬️ Wind Breeze & Speed**: Real-time slider controls for breeze direction (blowing left, calm, or blowing right) and fall speed (gentle to storm)
+- **🍂 Leaf Count**: Adjust particle count dynamically from 5 up to 80 leaves
+- **💾 State Persistence**: Automatically preserves your preferences (on/off, chosen shape, colors, sliders) in `localStorage`
+- **👆 Non-Intrusive**: Canvas runs with `pointer-events: none` so all stopwatch controls, inputs, and links remain fully clickable
+
+```javascript
+import { FallingLeaves } from 'falling-leaves';
+
+new FallingLeaves();
 ```
 
 ## 🔗 Project Links
